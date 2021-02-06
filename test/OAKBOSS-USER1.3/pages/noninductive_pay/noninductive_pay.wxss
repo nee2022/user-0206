@@ -1,0 +1,92 @@
+.noninduct_body{
+  background: #3D77F3;
+  width: 100vw;
+  height: 100vh;
+}
+.noninduct_body::before{
+  content: "";
+  display: table;
+}
+.header{
+  width: 100%;
+  height: 100rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+  font-size: 36rpx;
+ justify-content: center;
+ position: relative;
+}
+.nav1{
+  width: 120rpx;
+  height: 80rpx;
+  position:absolute;
+  z-index: 2;
+  left:27rpx
+}
+.back{
+  width: 17rpx;
+  height: 33rpx;
+  margin-top: 25rpx;
+}
+.txt2{
+  text-align: center;
+  font-size: 95rpx;
+  color: #fff;
+}
+.Txt{
+  margin-top: 59rpx;
+}
+.car_handrail{
+  width:1110rpx;
+  height: 319rpx;
+  margin-left: -110rpx;
+  margin-top: 55rpx;
+}
+.item3::before{
+  content: "";
+  display: table;
+}
+.item3{
+  width: 702rpx;
+  height: 272rpx;
+  border-radius: 20rpx;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+.method_item{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 28rpx;
+}
+.method_img{
+  width: 92rpx;
+  height: 92rpx;
+}
+.item1{
+  width: 98rpx;
+  height: 145rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 24rpx;
+}
+.use_method{
+  text-align: center;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+.btn{
+  width: 702rpx;
+  height: 94rpx;
+  line-height: 94rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #3D77F3;
+  background: #fff;
+  border-radius: 47rpx;
+  margin: 0 auto;
+  margin-top: 29rpx;
+}

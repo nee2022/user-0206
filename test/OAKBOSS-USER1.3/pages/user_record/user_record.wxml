@@ -1,0 +1,97 @@
+<view>
+  <header title="{{title}}" Url="{{Url}}"></header>
+  <view class='user_record_body'>
+    <view class='all'>
+          <view class="all_item">
+            <view class='stop'>
+              <image class='unify' src='../static/The parking lot.png'></image>
+            </view>
+            <view class='item_info'>
+              <view class='info1'>
+                <text>停车场停车</text>
+                <text>2019-08-10 14:09:01</text>
+              </view>
+              <view class='info2'>
+                <image class='money' src="../static/The yuan.png"></image>
+                <text>25.8</text>
+              </view>
+            </view>
+            <view class='state'>
+              <text>已完成</text>
+            </view>
+          </view>
+          <view class="all_item">
+            <view class='stop'>
+              <image class='unify' src='../static/The roadside parking.png'></image>
+            </view>
+            <view class='item_info'>
+              <view class='info1'>
+                <text>路边泊位</text>
+                <text>2019-08-10 14:09:01</text>
+              </view>
+              <view class='info2'>
+                <image class='money' src="../static/The yuan.png"></image>
+                <text>25.8</text>
+              </view>
+            </view>
+            <view class='state'>
+              <text>进行中</text>
+            </view>
+          </view>
+          <view class="all_item">
+            <view class='stop'>
+              <image class='unify' src="../static/Charging treasure.png"></image>
+            </view>
+            <view class='item_info'>
+              <view class='info1'>
+                <text>充电宝</text>
+                <text>2019-08-10 14:09:01</text>
+              </view>
+              <view class='info2'>
+                <image class='money' src="../static/The yuan.png"></image>
+                <text>25.8</text>
+              </view>
+            </view>
+            <view class='state gray'>
+              <text>已退款</text>
+            </view>
+          </view>
+          <view class="all_item">
+            <view class='stop'>
+              <image class='unify' src="../static/Bicycle charging.png"></image>
+            </view>
+            <view class='item_info'>
+              <view class='info1'>
+                <text>电单车充电</text>
+                <text>2019-08-10 14:09:01</text>
+              </view>
+              <view class='info2'>
+                <image class='money' src="../static/The yuan.png"></image>
+                <text>25.8</text>
+              </view>
+            </view>
+            <view class='state '>
+              <text>已完成</text>
+            </view>
+          </view>
+          <view class="all_item">
+            <view class='stop'>
+              <image class='unify' src="../static/Charging pile.png"></image>
+            </view>
+            <view class='item_info'>
+              <view class='info1'>
+                <text>汽车充电</text>
+                <text>2019-08-10 14:09:01</text>
+              </view>
+              <view class='info2'>
+                <image class='money' src="../static/The yuan.png"></image>
+                <text>25.8</text>
+              </view>
+            </view>
+            <view class='state'>
+              <text>已完成</text>
+            </view>
+          </view>
+        </view>
+  </view>
+</view>

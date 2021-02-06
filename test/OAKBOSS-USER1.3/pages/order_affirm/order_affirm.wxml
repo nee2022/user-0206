@@ -1,0 +1,156 @@
+<wxs src="../wxs/subutil.wxs" module="tools"></wxs>
+<view>
+  <header title="{{title}}" Url="{{Url}}"></header>
+  <view class='order_affirm_body'>
+    <view class='affirm_item1'>
+      <view class='item1_title'>
+        {{meal.name}}
+      </view>
+      <view class='item1_info'>{{meal.memo}}</view>
+      <view class='item1_price'>
+        <view>
+          <text wx:if="{{meal.pay!=0}}">￥{{meal.pay}}</text>
+          <text wx:else>￥{{pay}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='scan_item3'>
+      <view class='item3_info'>
+        <text>购买数量</text>
+        <view>
+          <view class='function3'>
+            <!-- 主容器 -->
+            <view class="stepper">
+              <!-- 减号 -->
+              <text class="{{meal.minusStatus}}" bindtap="bindMinus">-</text>
+              <!-- 数值 -->
+              <input disabled="true" value="{{meal.num}}" />
+              <!-- 加号 -->
+              <text class="normal" bindtap="bindPlus">+</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='plate_color'>
+        <text>车牌颜色</text>
+        <view bindtap="change_color1" data-id="{{id1}}" class="{{click1?'bluedeep':'gray'}}">
+          <text>蓝牌</text>
+        </view>
+        <view bindtap="change_color2" data-id="{{id2}}" class="{{click2?'green':'gray'}}">
+          <text>绿牌</text>
+        </view>
+        <view bindtap="change_color3" data-id="{{id3}}" class="{{click3?'yellow':'gray'}}">
+          <text>黄牌</text>
+        </view>
+        <view bindtap="change_color4" data-id="{{id4}}" class="{{click4?'white':'gray'}}">
+          <text>白牌</text>
+        </view>
+        <view bindtap="change_color5" data-id="{{id5}}" class="{{click5?'black':'gray'}}">
+          <text>黑牌</text>
+        </view>
+      </view>
+      <view class='plate_number'>
+        <text class='txt'>车牌号码</text>
+        <view class='bluesky' bindtap='clickme'>
+          <text>{{text}}</text>
+          <image class="white_triangle {{top?'roate':''}}" src='../static/white_triangle.png'></image>
+        </view>
+        <input type="text" class='input' value="{{value}}" bindinput="import"  placeholder="请输入车牌号码" />
+      </view>
+      <view class='item3_info' bindtap="clickme1">
+        <text>支付方式</text>
+        <view>
+          <text>{{type1}}</text>
+          <image class='back_right' src='../static/back_right.png'></image>
+        </view>
+      </view>
+      <!-- <navigator url="/pages/discount_coupon/discount_coupon" hover-class="fff" open-type="redirect">
+        <view class='item3_info'>
+          <text>优惠券</text>
+          <view>
+            <text>￥4.00</text>
+            <image class='back_right' src='../static/back_right.png'></image>
+          </view>
+        </view>
+      </navigator> -->
+      <view class="commodity_screen" bindtap="hideModal1" wx:if="{{showModalStatus1}}"></view>
+      <!--屏幕背景变暗的背景  -->
+      <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+      <view animation="{{animationData1}}" class="commodity_attr_box1" wx:if="{{showModalStatus1}}">
+        <view class='scan_title'>
+          <image bindtap='close1' src='../static/The left back.png'></image>
+          <text>支付方式</text>
+        </view>
+        <view>
+          <view class="page-body">
+            <view class="radio_function change">
+              <radio-group bindchange="radioChange1">
+                <label class="radio_item">
+                  <view class="item_name">
+                    <image class='pay_img' src='../static/qianbaozhifu.png'></image>
+                    <text>钱包(余额:{{wallet_amount}}元)</text>
+                  </view>
+                  <view class="radio_right">
+                    <radio value="r1" color="#56A3EF" />
+                  </view>
+                </label>
+                <label class="radio_item">
+                  <view class="item_name">
+                    <image class='pay_img' src='../static/weixinzhifu.png'></image>
+                    <text>微信</text>
+                  </view>
+                  <view class="radio_right">
+                    <radio value="r2" color="#56A3EF" />
+                  </view>
+                </label>
+              </radio-group>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!--弹出框  -->
+      <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+        <view class='province'>
+          <view class='province_change'>
+            <view wx:for="{{changes1}}" wx:key="index" bindtap='province_change' data-province="{{item.value}}">
+              {{item.name}}</view>
+          </view>
+          <view class='province_change'>
+            <view wx:for="{{changes2}}" wx:key="index" bindtap='province_change' data-province="{{item.value}}">
+              {{item.name}}</view>
+          </view>
+          <view class='province_change'>
+            <view wx:for="{{changes3}}" wx:key="index" bindtap='province_change' data-province="{{item.value}}">
+              {{item.name}}</view>
+          </view>
+          <view class='province_change'>
+            <view wx:for="{{changes4}}" wx:key="index" bindtap='province_change' data-province="{{item.value}}">
+              {{item.name}}</view>
+          </view>
+          <view class='province_change'>
+            <view wx:for="{{changes5}}" wx:key="index" bindtap='province_change' data-province="{{item.value}}">
+              {{item.name}}</view>
+            <view class='empty'></view>
+          </view>
+
+        </view>
+        <view class='area'></view>
+        <view class='cancle' bindtap='cancle'>取消</view>
+      </view>
+      <view class='scan_item4'>
+        <view class='pay_info'>
+          <view class='pay_info1'>
+            <text>合计：</text>
+            <text>￥</text>
+            <text wx:if="{{meal.pay!=0}}">{{tools.Fixed(meal.pay*meal.num)}}</text>
+            <text wx:else>{{tools.Fixed(pay*meal.num)}}</text>
+          </view>
+          <!-- <view class='pay_info2'>
+          <text>已优惠￥1.00</text>
+        </view> -->
+        </view>
+        <button class='pay_btn' bindtap="pay" size="mini">立即支付</button>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view>
+  <header title="{{title}}" Url="{{Url}}"></header>
+  <image class='money' src='../static/money.png'>
+  </image>
+  <view class='my_blance1'>
+    <text>我的余额</text>
+  </view>
+  <view class='my_blance2'>
+    <view class='blance2_item'>
+      <text>￥</text>
+      <text>{{amount}}</text>
+    </view>
+  </view>
+  <navigator url='/pages/recharge/recharge' open-type="redirect">
+    <button>充值</button>
+  </navigator>
+  <!-- <navigator url=''> -->
+    <!-- <view class='deal_detail'>
+      <text>交易明细</text>
+    </view> -->
+  <!-- </navigator> -->
+</view>

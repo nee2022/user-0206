@@ -1,0 +1,10 @@
+{
+  "navigationStyle":"custom",
+  "enablePullDownRefresh":true,
+  "onReachBottomDistance":10,
+  "backgroundColor":"#eee",
+  "backgroundTextStyle":"dark",
+  "usingComponents": {
+    "header":"../../components/header/header"
+  }
+}

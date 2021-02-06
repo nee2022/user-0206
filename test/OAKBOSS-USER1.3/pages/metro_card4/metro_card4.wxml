@@ -1,0 +1,22 @@
+<wxs src='../wxs/subutil.wxs' module="tools"/>
+<view>
+  <header title="{{title}}" Url="{{Url}}"></header>
+  <view class='metro_card4_body'>
+    <view class='card_area'>
+      <view class='card_info'>
+        <text>鉴权卡</text>
+        <text>{{cardInfo.number}}</text>
+        <text>有效期至{{tools.sub3(cardInfo.date_expired)}}</text>
+      </view>
+      <view class='card_amount'>
+        <text>￥{{cardInfo.amount}}</text>
+      </view>
+      <image class='card_size' src='../static/3.png'></image>
+    </view>
+   <!-- <navigator url="/pages/card_report1/card_report1" hover-class="fff">
+    <view class='card4_report'>
+      <text>去挂失</text>
+    </view>
+   </navigator> -->
+  </view>
+</view>

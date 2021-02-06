@@ -1,0 +1,120 @@
+.error_feedback_body {
+  width: 100vw;
+  height: 91vh;
+  background: #eee;
+}
+
+.error_feedback_body::before {
+  content: "";
+  display: table;
+}
+
+.scanning {
+  width: 27rpx;
+  height: 27rpx;
+  margin-left: 42rpx;
+  margin-right: 21rpx;
+}
+
+.feedback_item1 {
+  width: 645rpx;
+  height: 80rpx;
+  padding: 25rpx 28rpx 26rpx 29rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 7rpx 47rpx 4rpx rgba(196, 196, 196, 0.2);
+  border-radius: 20rpx;
+  margin: 0 auto;
+
+}
+
+.feedback_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 299rpx;
+  height: 80rpx;
+}
+
+.feedback_title>text:nth-child(1) {
+  font-size: 30rpx;
+}
+
+.feedback_title>text:nth-child(2) {
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.feedback_scan {
+  width: 192rpx;
+  height: 65rpx;
+  background: linear-gradient(90deg, #4599EE, #3A6CD6);
+  box-shadow: 0px 0px 16rpx 0px rgba(107, 130, 153, 0.25);
+  border-radius: 33rpx;
+  font-size: 30rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.feedback_item2 {
+  width: 644rpx;
+  height: 200rpx;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0 29rpx;
+  box-shadow: 0px 7rpx 47rpx 4px rgba(196, 196, 196, 0.2);
+  border-radius: 20rpx;
+}
+
+.feedback_item2>view {
+  height: 100rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback_item2>view:nth-child(2) {
+  border: 0;
+}
+
+.feedback_item2>view>text {
+  line-height: 100rpx;
+}
+
+.feedback_item2>view>text:nth-child(2) {
+  color: rgba(0, 0, 0, 0.5);
+}
+.feedback_item3{
+  width: 644rpx;
+  height: 495rpx;
+  padding: 35rpx 27rpx 32rpx 31rpx;
+  background: #fff;
+box-shadow: 0px 7rpx 47rpx 4px rgba(196, 196, 196, 0.2);
+border-radius: 20rpx;
+margin: 0 auto;
+}
+.error_info{
+  width: 644rpx;
+  height: 250rpx;
+  border: 1rpx solid #eee;
+  margin-top: 20rpx;
+  padding: 25rpx;
+  box-sizing: border-box;
+}
+.eee{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+textarea{
+  width: 604rpx;
+  height: 300rpx;
+}
+.feedback_item1,
+.feedback_item2,
+.feedback_item3{
+  margin-top: 19rpx;
+}

@@ -1,0 +1,35 @@
+<view>
+  <header title="{{title}}" Url='{{Url}}'></header>
+  <view class='error_feedback_body'>
+    <view class='feedback_item1'>
+      <view class='feedback_title'>
+        <text>上传二维码照片</text>
+        <text>如二维码损坏支持手动输入</text>
+      </view>
+      <view class='feedback_scan'>
+        <image class='scanning' src='../static/scanning.png'></image>
+        <text>扫码</text>
+      </view>
+    </view>
+    <view class='feedback_item2'>
+      <view>
+        <text>错误原因</text>
+        <text>二维码损坏</text>
+      </view>
+      <view>
+        <text>错误代码</text>
+        <text>2589</text>
+      </view>
+    </view>
+    <form bindsubmit="formSubmit">
+      <view class='feedback_item3'>
+        <view>描述问题</view>
+        <view class='error_info'>
+          <textarea fixed="true" placeholder="请您对所遇到的问题进行描述，以便我们更 好的帮助您" placeholder-class="eee" maxlength="{{max}}" minlength="{{min}}" focus="true" bindinput="inputs"></textarea>
+          <text class="hint">{{texts}}</text>
+          <text class='currentWordNumber'>{{currentWordNumber|0}}/{{max}}</text>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>

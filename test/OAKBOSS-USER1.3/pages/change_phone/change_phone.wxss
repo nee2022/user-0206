@@ -1,0 +1,73 @@
+.reg_login {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 92rpx;
+}
+
+.title {
+  font-size: 50rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+}
+.floor{
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 20rpx;
+}
+.user_write {
+  margin-top: 110rpx;
+}
+.phone_number,
+.auth_code {
+  padding: 28rpx 0;
+  font-size: 30rpx;
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+  position: relative;
+}
+
+.gray {
+  color: #999;
+  font-size: 28rpx;
+}
+
+input {
+  margin-left: 50rpx;
+}
+.butto{
+  margin-top: 67rpx;
+  width: 703rpx !important;
+  height: 88rpx !important;
+  font-size: 36rpx !important;
+  line-height: 60rpx !important;
+  color: #fff;
+background: linear-gradient(90deg, #4599EE, #3A6CD6);
+border-radius: 44rpx !important;
+}
+.btn_code1 {
+  background: #4598ED;
+  padding: 9rpx 30rpx !important;
+  margin-top: -7rpx;
+   margin-left: 50rpx;
+    box-sizing: border-box !important;
+  padding: 9rpx 30rpx !important;
+   font-size: 22rpx !important;
+   border-radius: 29rpx;
+   color: #fff;
+}
+
+.btn_code2 {
+  color: #fff;
+  border-radius: 29rpx;
+  width: 200rpx !important;
+  height: 60rpx !important;
+  background: #e8e8e8;
+  font-size: 19rpx !important;
+  padding-top: 13rpx !important;
+}
+
+.disappear {
+  display: none;
+}

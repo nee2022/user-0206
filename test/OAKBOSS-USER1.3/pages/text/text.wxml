@@ -1,0 +1,123 @@
+<!-- <pages/text/text.wxml -->
+<view class='container'>
+  <!-- <view bindtap="clickme">点击我可以看到底部弹框的出现</view>   -->
+  <!--屏幕背景变暗的背景  -->
+  <!-- <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view> -->
+  <!--弹出框  -->
+  <!-- <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">在这里写弹出框里面的布局</view> -->
+  <!-- <view class='userinfo'>
+     <button open-type="getUserInfo" bindgetuserinfo="auth" wx:if="{{showAuth}}">授权登录</button>
+     <block wx:else>
+       <image class='userinfo-avator' src='{{userInfo.avatarUrl}}' mode='cover'></image>
+       <text class='userinfo-nickname'>{{userInfo.nickName}}</text> 
+     </block>
+   </view>
+   <view class='usermotto'>
+       <text class='user-motto'>Hello world</text>
+   </view> -->
+  <!-- 
+  1.小程序 2.开发者服务器 3.微信接口服务
+  小程序授权登录：小程序可以通过微信官方提供的登录能力方便的获取微信提供的用户身份标识，快速建立小程序内的用户体系。
+  1wx.login()获取code wx.request()发送code--》2.登录凭证校验接口（appid+appsecert+code）-》3.微信接口校验Wechat Http Api 校验成功返回session_key访问微信其他接口,openid微信唯一标识  失败返回fail函数-》 2.在服务器中保存openid,session_key-》1.返回自定义登录状态（字符串 packed token）到小程序-》1.返回的自定义登录状态的唯一标识存入stroge(本地)-》1.wx.request()发起业务请求 携带自定义登录态唯一标识-》2.通过自定义登录状态 查询openid 和session_key-》查询(业务数据,微信接口数据)-》返回业务数据到小程序端
+  1.调用wx.login获取 临时登录凭证code,并回传到开发者服务器
+  2.调用code2Session接口，换取 用户唯一标识OpenID和会话秘钥session_key.
+  之后开发者服务器可以根据用户标识来生成自定义登录状态，用于后续业务逻辑中前后端交互时识别用户身份
+   注意：
+   1.会话秘钥session_key是对用户数据进行 加密签名的密钥。为了应用自身的数据安全，开发者服务器不应该把回话秘钥下发到小程序，也不应该对外提供这个密钥 由小程序保存会被拦截 一定由服务端保存
+   2.临时的登录凭证code只能使用一次 校验一次换一次
+
+   wx.login->
+ -->
+  <!-- <button type="primary" bindtap="login">登录</button>
+ <button type="primary" bindtap='checkSession'>检查登录</button>
+ <button type="primary" bindtap='recharge'>自定义充值</button>
+ <button open-type="getUserInfo" bindgetuserinfo="getuserinfo"></button> -->
+  <!-- <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view> -->
+
+  <!-- <view class="modalDlg" wx:if="{{showModal}}">
+     <image src="/figures/logo-smile.png"/>
+     <text>欢迎来到模态对话框~</text>
+     <button bindtap="go">点我可以关掉对话框</button>
+ </view>
+  
+ <button bindtap="submit">点我弹窗</button> -->
+  <!-- <view class="page-body">
+  <view class="page-section">
+    <view class="">
+      <radio-group bindchange="radioChange">
+        <label class="" wx:for="{{items}}" wx:key="{{item.value}}">
+          <view class="">
+            <radio value="{{item.value}}" checked="true"/>
+          </view>
+          <view class="weui-cell__bd">{{item.name}}</view>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+</view> -->
+  <!-- <view class="container1" wx:if="{{page == 1}}" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" animation="{{ani1}}">
+container1
+</view>
+<view class="container2" wx:if="{{page == 2}}"  bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" animation="{{ani2}}">
+container2
+</view> -->
+
+  <!-- <--<text class='marright'>{{hours}}:{{minute}}:{{second}}</text>
+<button class="aaa" bindtap="start">开始</button>
+<button class="aaa" bindtap="stop">暂停</button> -->
+  <!-- <scroll-view scroll-x="true" class="scroll-view-x" style="padding-top:10rpx" scroll-with-animation="true" wx:if="{{tlist[currentTab].secondList}}" scroll-left='0' bindscroll="getleft">
+        <!--内容区域-->
+  <!-- <view>
+          <view class="navigator_second" wx:for="{{tlist[currentTab].secondList}}" wx:for-item="childItem" bindtap="getProductList" data-id="{{childItem.id}}">
+            <image class="navigator_icon" src="{{childItem.icon}}"></image>
+            <text class="navigator_text">{{childItem.name}}</text>
+          </view>
+        </view>
+        <view wx:if="{{tlist[currentTab].thirdList}}">
+          <view class="navigator_second" wx:for="{{tlist[currentTab].thirdList}}" wx:for-item="childItem" data-id="{{childItem.id}}" bindtap="getProductList">
+            <image class="navigator_icon" src="{{childItem.icon}}" ></image>
+            <text class="navigator_text">{{childItem.name}}</text>
+          </view>
+        </view>
+      </scroll-view > -->
+  <!--滚动条部分-->
+  <!-- <view wx:if="{{slideShow}}" class="slide">
+        <view class='slide-bar' >
+          <view class="slide-show" style="width:{{slideWidth}}rpx; margin-left:{{slideLeft<=1 ? 0 : slideLeft+'rpx'}};"></view>
+        </view>
+      </view>  -->
+  <!-- <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+    <view id="green" class="scroll-view-item_H bc_green">横向</view>
+    <view id="red"  class="scroll-view-item_H bc_red">横向</view>
+    <view id="yellow" class="scroll-view-item_H bc_yellow">横向</view>
+    <view id="yellow" class="scroll-view-item_H bc_yellow">横向</view>
+    <view id="yellow" class="scroll-view-item_H bc_yellow">横向</view>
+    <view id="yellow" class="scroll-view-item_H bc_yellow">横向</view>
+    <view id="blue" class="scroll-view-item_H bc_blue">横向</view>
+  </scroll-view> -->
+  <!-- <navigator url='/pages/scan_pay/scan_pay?qrcode="5C12C785"'>
+    <button>13123</button>
+  </navigator> -->
+  <!-- <text>{{markers[id].placeName}}</text> -->
+  <!-- <view class='progress_box'>
+        <canvas class="progress_bg"   canvas-id="canvasProgressbg">  </canvas> 
+        <canvas class="progress_canvas"   canvas-id="canvasProgress">  </canvas> 
+        <view class="progress_text">
+            <view class="progress_dot"></view> 
+            <text class='progress_info'> {{progress_txt}}</text>
+        </view>     
+    </view> -->
+    
+    <!-- <view class='weui'>
+<canvas class='oneCan' canvas-id='one' ></canvas>
+<canvas class='oneCan' canvas-id='two' ></canvas> -->
+<view class='canvasBox'>
+  <view class='bigCircle'></view>
+  <view class='littleCircle'></view>
+   <canvas canvas-id="runCanvas" id="runCanvas" class='canvas'></canvas>
+</view>
+</view>
+ 
+<!-- </view>  -->
+<!-- <canvas style="width: 300px; height: 200px;" canvas-id="canvasid"></canvas> -->
+<!-- open-type 弹出一个框 -->

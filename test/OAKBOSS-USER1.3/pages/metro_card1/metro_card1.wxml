@@ -1,0 +1,50 @@
+<wxs src='../wxs/subutil.wxs' module="tools"/>
+<view>
+  <header title="{{title}}" Url="{{Url}}"></header>
+  <view class='metro_card1_body'>
+    <!-- <navigator url='/pages/metro_card2/metro_card2' hover-class="fff">  -->
+      <view class='card_area' bindtap="loss_recharge" data-service_type="{{cards[index]}}" wx:for='{{cards.length}}' wx:key='index' wx:if="{{cards[index].type!=0}}">
+       <view class='card_info'>
+           <text>{{cards[index].type==1?'鉴权卡':cards[index].type==2?'储值卡':cards[index].type==3?'离线卡':''}}</text>
+           <text>{{cards[index].number}}</text>
+           <text>有效期至 {{tools.sub3(cards[index].date_expired)}}</text>
+       </view>
+       <view class='card_amount'>
+         <text>￥{{cards[index].amount}}</text>
+         <view class='btn' wx:if="{{cards[index].type==2}}">续费</view>
+       </view>
+       <image class='card_size' src='{{cards[index].type==1?"../static/3.png":cards[index].type==2?"../static/1.png":cards[index].type==1?"../static/2.png":""}}'></image>
+    </view>
+    <!-- </navigator> -->
+    <!-- <view class='card_area'>
+       <view class='card_info'>
+           <text>离线卡</text>
+           <text>先充值，再消费，使用此卡最高享88折</text>
+           <text>有效期至2019-09-09</text>
+       </view>
+       <view class='card_amount'>
+         <text>￥100.0</text>
+       </view>
+       <image class='card_size' src='../static/2.png'></image>
+    </view>
+    <navigator url='/pages/metro_card4/metro_card4' hover-class="fff">
+      <view class='card_area'>
+       <view class='card_info'>
+           <text>鉴权卡</text>
+           <text>先充值，再消费，使用此卡最高享88折</text>
+           <text>有效期至2019-09-09</text>
+       </view>
+       <view class='card_amount'>
+         <text>￥100.0</text>
+       </view>
+       <image class='card_size' src='../static/3.png'></image>
+    </view>
+    </navigator>-->
+    <navigator url="/pages/add_discount/add_discount">
+      <view class="add_card">
+       <text decode="true">+&nbsp;添加优惠卡</text>
+       <text>帮助您获取最新优惠</text>
+    </view>
+    </navigator> 
+  </view>
+</view>

@@ -1,0 +1,23 @@
+
+var sub1=function(val){
+   return val.slice(-9,-5)  
+}
+var sub2=function(e){
+  return e.slice(-5,-3)
+}
+var sub3=function(e){
+  return e.slice(0,10)
+}
+var toImgfilter = function (e){
+  return e.replace(getRegExp('-','g'),'.');
+}
+var Fixed=function(e){
+  return e.toFixed(2)
+}
+module.exports={
+  sub1:sub1,
+  sub2:sub2,
+  sub3:sub3,
+  toImgfilter: toImgfilter,
+  Fixed:Fixed
+}

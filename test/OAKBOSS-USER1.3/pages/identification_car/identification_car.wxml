@@ -1,0 +1,47 @@
+<view>
+  <header title="{{title}}" Url="{{Url}}"></header>
+  <view class="identification_car_body">
+    <view class='item1'>
+      <view>
+        <text>车牌颜色</text>
+        <text>{{color=='blue'?'蓝牌':color=='green'?'绿牌':color=='white'?'白牌':color=='yellow'?'黄牌':color=='black'?'黑牌':'无状态'}}</text>
+      </view>
+      <view>
+        <text>车牌号码</text>
+        <text>{{plate}}</text>
+      </view>
+      <view>
+        <text>车主姓名</text>
+        <input class='input' bindinput="name" type="text" placeholder="请输入您的真实姓名" />
+      </view>
+    </view>
+    <view class='item2'>
+      <view>
+        <text>上传行驶证照片</text>
+        <view class='photo'>
+        <image class='driving_license_contrary' src='../static/driving_license_contrary.png' wx:if="{{tempFilePaths_==''}}"></image>
+        <image wx:else src="{{tempFilePaths_}}" mode="aspecFill" style="width: 277rpx; height: 177rpx"></image>
+        <view class='black_circle' bindtap="chooseimage_">
+          <image class='picture_front' src="../static/picture_front.png"></image>
+        </view>
+      </view>
+       
+      </view>
+    </view>
+    <view class='item3'>
+      <view>
+        <text>上传驾驶证照片</text>
+      </view>
+      <view class='photo'>
+          <image class='driving_license_front' src='../static/driving_license_front.png' wx:if="{{tempFilePaths==''}}"></image>
+          <image wx:else src="{{tempFilePaths}}" mode="aspecFill" style="width: 277rpx; height: 177rpx"></image>
+          <view class='black_circle' bindtap="chooseimage">
+            <image class='picture_front' src="../static/picture_front.png"></image>
+          </view>
+        </view>
+    </view>
+    <view class='item4' bindtap="refer">
+      <text>提交</text>
+    </view>
+  </view>
+</view>

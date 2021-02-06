@@ -1,0 +1,36 @@
+<view>
+  <header title="{{title}}" Url="{{Url}}"></header>
+  <view class='add_success_body'>
+    <image class="success1" src="../static/success1.png"></image>
+    <view class='success_info'>
+      <text>添加成功</text>
+    </view>
+    <view class='title'>
+       <text class='txt1'>————— 申请认证车辆，专享车主福利 —————</text>
+    </view>
+    <view class='service'>
+      <view class='service_item'>
+        <image src="../static/trumpetgreen.png"></image>
+        <text>通知服务</text>
+      </view>
+      <view class='service_item'>
+        <image src="../static/walletblue.png"></image>
+        <text>无感支付</text>
+      </view>
+      <view class='service_item'>
+        <image src="../static/successred.png"></image>
+        <text>认证标志</text>
+      </view>
+    </view>
+    <view>
+      <view class='btns'>
+          <view>
+            <text>去认证</text>
+          </view>
+          <view>
+            <text>忽略</text>
+          </view>
+      </view>
+    </view>
+  </view>
+</view>

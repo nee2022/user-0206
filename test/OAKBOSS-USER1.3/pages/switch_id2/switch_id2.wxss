@@ -1,0 +1,45 @@
+.switch_img{
+  position: relative;
+  width: 250rpx;
+  height: 250rpx; 
+  top: 59rpx;
+  left: 250rpx;
+}
+.switch_title{
+  position: relative;
+  font-size: 30rpx;
+  color: #797979;
+  top: 90rpx;
+  left: 307rpx;
+}
+.switch_article{
+  position: relative;
+  font-size: 36rpx;
+  color: #3B70D8;
+  top: 110rpx;
+  left: 315rpx;
+}
+.btn{
+  width: 703rpx;
+  height: 104rpx;
+  line-height: 104rpx;
+  text-align: center;
+  background: linear-gradient(90deg, #4599EE, #3A6CD6);
+  color: #fff;
+font-size: 36rpx;
+border-radius: 50px;
+position: relative;
+top: 180rpx;
+left: 24rpx;
+border: 1rpx soild #3B70D8 !important;
+}
+.btn1{
+  color: #3B70D8;
+ background:#fff;
+ border: 1rpx solid #3B70D8;
+}
+.btn.btn1{
+  position: relative;
+  top: 215rpx;
+}
+

@@ -1,0 +1,21 @@
+<view>
+  <header title="{{title}}" Url="{{Url}}"></header>
+  <view class='scan_fail_body'>
+    <image class='error1' src='../static/error1.png'></image>
+    <view class='fail_title'>
+      <text>扫码失败</text>
+    </view>
+    <view class='fail_info'>
+      <text>失败原因：抱歉，暂不支持该业务</text>
+    </view>
+    <view class='fail_info' hidden="true">
+      <text>错误代码：2577</text>
+    </view>
+     <view class='commit_error' hidden="true">
+       <text>提交错误</text>
+     </view>
+     <view class='back_index' bindtap="f2">
+       <text>返回首页</text>
+     </view>
+  </view>
+</view>

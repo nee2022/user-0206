@@ -1,0 +1,65 @@
+.metro_card4_body{
+  background: #eee;
+  height: 1330rpx;
+}
+.card_area{
+  margin: 0 auto;
+  width:730rpx;
+  height: 254rpx;
+  position: relative;
+  margin-bottom: -10rpx;
+}
+.card_size{
+  width:730rpx;
+  height: 254rpx;
+}
+.card_info{
+  width: 432rpx;
+  height: 147rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 58rpx;
+  left: 43rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+.card_info>text:nth-child(1){
+  font-size: 30rpx;
+}
+.card_info>text:nth-child(2){
+  color: rgba(255, 255, 255, 0.58);
+  margin-top: -20rpx;
+}
+.card_info>text:nth-child(3){
+  color: rgba(255, 255, 255, 0.6);
+}
+.card_amount{
+  width: 124rpx;
+  height: 140rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  top: 61rpx;
+  right: 42rpx;
+}
+.card_amount>text{ 
+font-size: 36rpx;
+font-weight: bold;
+color: #FFFFFF; 
+}
+.card4_report{
+  width: 703rpx;
+  height: 90rpx;
+  background: #fff;
+  text-align: center;
+  line-height: 90rpx;
+font-size: 36rpx;
+margin: 0 auto;
+margin-top: 79rpx;
+box-shadow: 0px 0px 16rpx 0px rgba(107, 130, 153, 0.25);
+border-radius: 50rpx;
+}

@@ -1,0 +1,46 @@
+<wxs src='../wxs/subutil.wxs' module="tools"/>
+<view>
+  <header title="{{title}}" Url="{{Url}}"></header>
+  <view class='metro_card1_body'>
+    
+  <view class='card_area'>
+       <view class='card_info'>
+           <text>网络储值卡</text>
+           <text>{{cardInfo.number}}</text>
+           <text>有效期至 {{tools.sub3(cardInfo.date_expired)}}</text>
+       </view>
+       <view class='card_amount'>
+         <text>￥{{cardInfo.amount}}</text>
+        <navigator url="/pages/recharge1/recharge1?cardId={{cardInfo.id}}" hover-class="fff">
+          <view class='btn'>续费</view>
+        </navigator>
+       </view>
+       <image class='card_size' src='../static/1.png'></image>
+  </view>
+  <!-- <view class='card_function'>
+      <view bindtap="user_record">
+        <text>使用记录</text>
+        <image class='back_right1' src='../static/back_right.png'></image>
+      </view>
+      <view bindtap="recharge_detail1">
+         <text>充值记录</text>
+         <image class='back_right1' src='../static/back_right.png'></image>
+      </view>
+    </view>
+    <view class='card_function'>
+      <view bindtap="card_report">
+        <text>去挂失</text>
+        <image class='back_right2' src='../static/back_right.png'></image>
+      </view>
+      <view bindtap="unbind">
+         <text>去解绑</text>
+         <image class='back_right2' src='../static/back_right.png'></image>
+      </view>
+    </view>  -->
+   <navigator url='/pages/recharge1/recharge1?cardId={{cardInfo.id}}' hover-class="fff">
+    <view class='btn1'>
+      <text>充值</text>
+    </view>
+   </navigator>
+  </view>
+</view>

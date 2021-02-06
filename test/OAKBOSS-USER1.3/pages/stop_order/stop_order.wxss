@@ -1,0 +1,94 @@
+.stop_order_body{
+  background: #eee;
+  width: 100vw;
+  height: 92vh;
+}
+.stop_order_body::before{
+  content: '';
+  display: table;
+}
+
+.order_item{
+  width: 644rpx;
+  height: 168rpx;
+  padding: 30rpx 29rpx 33rpx 29rpx;
+  border-radius: 20rpx;
+background: #FFFFFF;
+box-shadow: 0px 7px 47px 4px rgba(196, 196, 196, 0.2);
+margin: 0 auto;
+margin-top: 19rpx;
+}
+.item1{
+  display: flex;
+  justify-content: space-between;
+}
+.item1>.out{
+  width: 162rpx;
+  height: 49rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.out>.inner{
+   width: 155rpx;
+   height: 44rpx;
+   border-radius: 5rpx;
+  text-align: center;
+  line-height: 44rpx;
+  color: #fff;
+}
+
+.check_detail{
+  color:rgba(0, 0, 0, 0.7);
+  font-size: 24rpx;
+}
+.back_right{
+   width: 10rpx;
+   height: 19rpx; 
+   margin-left: 13rpx; 
+}
+.green{
+  background: #3bb04f;
+  border-radius: 5rpx;
+}
+._green{
+  background: #3bb04f;
+  border: 0.5px solid #fff;
+}
+.timer{
+  width: 23rpx;
+  height: 24rpx;
+}
+.position{
+  width: 24rpx;
+  height: 27rpx;
+ 
+}
+.item2{
+  display: flex;
+  margin-top: 10rpx;
+}
+.item2::before{
+  content: '';
+  display: table;
+}
+.item2>text{
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}
+.item3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.car_status{
+  color: #3c76D8;
+  font-size: 24rpx;
+}
+.status_pay>text:nth-child(1){
+   font-size: 24rpx;
+}
+.status_pay>text:nth-child(2){
+  font-size: 36rpx;
+}

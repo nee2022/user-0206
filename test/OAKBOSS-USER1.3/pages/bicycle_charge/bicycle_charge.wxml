@@ -1,0 +1,51 @@
+<view>
+  <view class="login">
+    <navigator class='add' url="/pages/index/index" open-type="redirect" hover-class="eee">
+      <image class='back_left1' src='../../pages/static/fanhui.png'></image>
+    </navigator>
+      <image class='bicycle_energy' src='../static/Bicyclecharging1.png'></image>
+    <text class='header_title'>电单车充电</text>
+  </view>
+  <view class='bicycle_charge_body'>
+    <view class='bicycle_info'>
+       <text class='info_item1'>{{soc}}%</text>
+       <!-- <text class='info_item2'>预计14:00充满</text> -->
+       <view class='info_item3'>
+         <view class='item3_info'>
+           <text>已充电量</text>
+           <text>{{_energy1}}</text>
+         </view>
+         <view class='item3_info'>
+           <text>已充时长</text>
+           <text hidden='{{hidden1}}'>{{second}}秒</text>
+           <text hidden='{{hidden2}}'>{{minute}}分钟</text>
+           <text hidden='{{hidden3}}'>{{hour}}小时{{minute}}分钟</text>
+         </view>
+         <view class='item3_info'>
+           <text>花费金额</text>
+           <text>{{pay}}元</text>
+         </view>
+       </view>
+       <view class='info_item4'>
+            <view class='item4_info'>
+                 <image class='mini' src='../static/_电压@2x.png'></image>
+                 <text>电压：{{v}}V</text>
+            </view>
+            <view class='item4_info'>
+                 <image class='mini' src='../static/电流@2x.png'></image>
+                 <text>电流：{{_i1}}</text>
+            </view>
+            <view>
+              <image class='mini' src='../static/功率@2x.png'></image>
+              <text>功率：{{_p1}}</text>
+            </view>
+       </view>
+       <button bindtap="f2">结束充电</button>
+    </view>
+    <!-- <navigator url=''> -->
+      <view class='question'>
+        <text >问题反馈</text>
+      </view>
+    <!-- </navigator> -->
+  </view>
+</view>

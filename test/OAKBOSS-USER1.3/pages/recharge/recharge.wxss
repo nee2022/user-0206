@@ -1,0 +1,236 @@
+.recharge_body::before{
+  content: "";
+  display: table;
+}
+.recharge_body{
+  width: 750rpx;
+  height: 100vh;
+  background: #eee;
+  padding: 19rpx 24rpx;
+}
+.recharge_title{
+  width: 345rpx;
+  height: 31rpx;
+  margin-top: 30rpx;
+}
+.recharge_title text{
+  font-size:26rpx;
+  color: #999999;
+}
+.recharge_title>text:nth-child(1){
+   font-size: 32rpx;
+   font-weight: bold;
+   color: #333;
+}
+.recharge_title>text:nth-child(2){
+  margin-left: 20rpx;
+}
+.recharge_title>text:nth-child(3){
+  color: #FCA747;
+}
+.rechange_banner{
+  width: 701rpx;
+  height: 169rpx;
+background: linear-gradient(90deg, #FFA51D, #FCC546);
+border-radius: 10rpx;
+position: relative;
+}
+.wenzi{
+  width: 376rpx;
+  height: 78rpx;
+  position: absolute;
+  top: 22rpx;
+  left: 27rpx;
+}
+.activity{
+  width: 209rpx;
+  height: 161rpx;
+  position: absolute;
+  right: 21rpx;
+  top: 10rpx;
+}
+.banner_info{
+  font-size: 33.82rpx;
+  color: #FFEBC1;
+  display: flex;
+  position: absolute;
+  top: 109rpx;
+  left: 35rpx;
+}
+.banner_info>view{
+ width: 80rpx;
+ height: 37rpx;
+ border-radius: 17rpx;
+ color: #FAB336;
+ font-size: 28.43rpx;
+ font-weight: bold;
+ background: #fff;
+ line-height: 37rpx;
+ text-align: center;
+ margin-left: 9rpx;
+ margin-top: 6rpx;
+}
+.you{
+  width: 9rpx;
+  height: 19rpx;
+}
+.recharge_input{
+  margin-top: 29rpx;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  width: 701rpx;
+  height: 100rpx;
+  border-radius: 15rpx;
+box-shadow: 0px 7px 47px 4px rgba(196, 196, 196, 0.2);
+}
+.recharge_input>text{
+ margin-left: 26rpx;
+ font-size: 48rpx;
+}
+.recharge_input>input{
+  margin-left: 23rpx;
+}
+.gray{
+  font-size: 30rpx;
+  color: #999;
+}
+.recharge_money{
+  width: 702rpx;
+  height: 344rpx;
+  border-radius: 20rpx;
+box-shadow: 0px 7px 47px 4px rgba(196, 196, 196, 0.2);
+padding: 44rpx 30rpx 50rpx 27rpx;
+box-sizing: border-box;
+background: #fff;
+margin-top: 20rpx;
+}
+.recharge_active{
+  position: relative;
+}
+.recharge_normal{
+  position: relative;
+  margin-top: 140.8rpx;
+}
+.active_item{
+  width: 202rpx;
+  height: 104.8rpx;
+box-shadow: 0px 0px 20rpx 0px rgba(193, 112, 33, 0.1);
+border-radius: 20rpx;
+position: relative;
+}
+.area1{
+  position: absolute;
+}
+.area2{
+  position: absolute;
+  left: 222rpx;
+}
+.area3{
+  position: absolute;
+  left: 444rpx;
+}
+.normal_item{
+  width: 202rpx;
+  height: 104.8rpx;
+box-shadow: 0px 0px 20rpx 0px rgba(193, 112, 33, 0.1);
+border-radius: 20rpx;
+position: relative;
+background: #fff;
+}
+.area4{
+  position: absolute;
+}
+.area5{
+  position: absolute;
+  left: 222rpx;
+}
+.area6{
+  position: absolute;
+  left: 444rpx;
+}
+.item1,.item2{
+  color: #FCA747;
+}
+.item1{
+  position: absolute;
+  bottom: 10rpx;
+  left: 18rpx;
+}
+.item1>text:nth-child(1){
+  font-size: 30rpx;
+}
+.item1>text:nth-child(2){
+  font-size: 40rpx;
+}
+.item2{
+  font-size: 24rpx;
+  position: absolute;
+  top: 34rpx;
+  right: 32rpx;
+}
+.item3{
+  color: #fff;
+  font-size: 18rpx;
+  width: 117rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  background: #FCA747;
+  position: absolute;
+  top: -10rpx;
+border-radius: 10px 10px 10px 0px;
+}
+.item4{
+  color: #FCA747;
+  position: absolute;
+  top: 24rpx;
+  left: 44rpx;
+}
+.item4>text:nth-child(1){
+  font-size: 30rpx;
+}
+.item4>text:nth-child(2){
+  font-size: 40rpx;
+}
+.Exclamation{
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 9rpx;
+}
+.recharge_info{
+  color: #999;
+  font-size: 24rpx;
+  display: flex;
+ height: 28rpx;
+ margin-left: 122rpx;
+ margin-top: 48rpx;
+ margin-bottom: 30rpx;
+ line-height: 29rpx;
+}
+.btn{
+  width: 702rpx !important;
+height: 97rpx !important;
+background: linear-gradient(90deg, #FFAC49, #F07E3E);
+box-shadow: 0px 0px 16rpx 0px rgba(107, 130, 153, 0.25);
+border-radius: 49rpx !important;
+font-size: 36rpx;
+color: #fff;
+font-weight: 500 !important;
+line-height: 67rpx !important;
+margin-left:5rpx !important;
+margin-top: 19rpx;
+}
+.recharge_detail{
+  font-size: 24rpx;
+  margin-top: 214rpx;
+  margin-left: 304rpx;
+}
+.money_box1{
+  border: 2px solid #FCA747;
+}
+.last-item{
+ position: absolute;
+ top: 33rpx;
+ left: 58rpx;
+}

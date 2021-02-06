@@ -1,0 +1,39 @@
+.attestation_success_body::before{
+  content: "";
+  display: table;
+}
+.attestation_success_body{
+  height: 91vh;
+  width: 100vw;
+  background: #eee;
+}
+.success1{
+  width: 175rpx;
+  height: 175rpx;
+  margin-left: 38vw;
+  margin-top: 18vh;
+  margin-bottom: 10rpx;
+}
+.success_txt1,.success_txt2{
+  text-align: center;
+  font-size: 36rpx;
+  /* margin-top: rpx; */
+}
+.success_txt2{
+  font-size: 24rpx;
+  opacity: 0.5;
+  margin-top: 5rpx;
+}
+.btn{
+  width: 703rpx;
+  height: 93rpx;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 93rpx;
+  color: #fff;
+  font-size: 36rpx;
+background: linear-gradient(90deg, #4599EE, #3A6CD6);
+box-shadow: 0px 0px 16rpx 0px rgba(107, 130, 153, 0.25);
+border-radius: 47rpx;
+margin-top: 82rpx;
+}

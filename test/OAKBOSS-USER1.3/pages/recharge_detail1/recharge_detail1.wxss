@@ -1,0 +1,67 @@
+.recharge_detail_body{
+  background: #eee;
+  width: 750rpx;
+  height: 1206rpx;
+  padding: 20rpx 25rpx;
+  box-sizing: border-box;
+}
+.zhankai1{
+  width: 18rpx;
+  height: 10rpx;
+  margin-left: 14rpx;
+  vertical-align: middle;
+}
+.recharge_info{
+  font-size: 24rpx;
+  color: #000;
+  opacity: 0.5;
+  margin-top: 12rpx;
+}
+.bulid{
+  width: 76rpx;
+  height: 77rpx;
+  position: absolute;
+  top: 39rpx;
+  left: 18rpx;
+}
+.recharge_message{
+  margin-top:12rpx
+}
+.recharge_message>.message_item:first-child{
+  border-radius: 20rpx 20rpx 0 0 ;
+}
+.recharge_message>.message_item:last-child{
+  border-radius: 0 0 20rpx 20rpx ;
+}
+.message_item{
+  height: 174rpx;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+.item_info{
+  width: 276rpx;
+  height: 96rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  left: 125rpx;
+  top: 30rpx;
+}
+.item_info text{
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 24rpx;
+}
+.item_info>text:nth-child(1){
+  font-size: 30rpx;
+  color: #333;
+}
+.item_sum{
+  position: absolute;
+  top: 53rpx;
+  right: 29rpx;
+  font-size: 36rpx;
+font-weight: bold;
+color: #FFA200;
+}

@@ -1,0 +1,49 @@
+<view>
+  <view class="login">
+    <navigator url="/pages/index/index" >
+      <image class='back_left1' src='../../pages/static/fanhui.png'></image>
+    </navigator>
+      <image class='bicycle_energy' src='../static/Car battery1.png'></image>
+    <text class='header_title'>汽车充电</text>
+  </view>
+  <view class='bicycle_charge_body'>
+    <view class='bicycle_info'>
+       <text class='info_item1'>46%</text>
+       <text class='info_item2'>预计14:00充满</text>
+       <view class='info_item3'>
+         <view class='item3_info'>
+           <text>已充电量</text>
+           <text>48度</text>
+         </view>
+         <view class='item3_info'>
+           <text>已充时长</text>
+           <text>20分</text>
+         </view>
+         <view class='item3_info'>
+           <text>花费金额</text>
+           <text>25.1元</text>
+         </view>
+       </view>
+       <view class='info_item4'>
+            <view class='item4_info'>
+                 <image class='mini' src='../static/_电压@2x.png'></image>
+                 <text>电压：100V</text>
+            </view>
+            <view class='item4_info'>
+                 <image class='mini' src='../static/电流@2x.png'></image>
+                 <text>电流：100mA</text>
+            </view>
+            <view>
+              <image class='mini' src='../static/功率@2x.png'></image>
+              <text>功率：100W</text>
+            </view>
+       </view>
+       <button>结束充电</button>
+    </view>
+    <navigator url=''>
+      <view class='question'>
+        <text >问题反馈</text>
+      </view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<view>
+  <header title="{{title}}" Url='{{Url}}'></header>
+  <view class='nickname_body'>
+    <form bindsubmit="formSubmit_">
+      <view class='nickname_input'>
+        <input
+         type="number"
+         bindinput="nickname_input"
+         name='nickname'
+         placeholder="输入卡号"
+         placeholder-class="gray"
+         maxlength="24"
+         value="{{number}}"
+         />
+        <view class='tips'>
+          <text>{{num}}</text>
+          <text>/24</text>
+        </view>
+      </view>
+      <myToast message='{{message}}' class="{{vanish?'':'disappear'}}"></myToast>
+      <button disabled="{{disabled1}}" class="{{buton?'':'btn'}}" form-type="submit">绑定</button>
+  </form>
+  </view>
+ 
+</view>

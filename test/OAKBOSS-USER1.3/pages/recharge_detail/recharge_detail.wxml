@@ -1,0 +1,29 @@
+<view>
+  <header title='{{title}}' Url="{{Url}}"></header>
+  <view class='recharge_detail_body'>
+    <view class="section">
+      <picker mode="date" value="{{date}}" start="{{start}}" end="{{end}}" bindchange="bindDateChange" fields='month'>
+        <view class="picker">
+          <text>{{date}}月</text>
+          <image class='zhankai1' src='../static/zhankai1.png'></image>
+        </view>
+      </picker>
+    </view>
+    <view class='recharge_info'>
+      <text>共充值￥{{total_paid}}元</text>
+    </view>
+    <view class='recharge_message'  >
+      <view class='message_item'  wx:for="{{payments.length}}" wx:key='index'>
+        <image class='bulid' src='../static/WeChat.png'></image>
+        <view class='item_info'>
+          <text>微信充值</text>
+          <text>钱包充值</text>
+          <text>{{payments[index].update_time}}</text>
+        </view>
+        <view class='item_sum'>
+          <text>￥{{payments[index].pay}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
