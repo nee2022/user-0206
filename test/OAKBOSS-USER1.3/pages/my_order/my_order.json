@@ -1,7 +1,0 @@
-{
-  "navigationStyle":"custom" ,
-  "onReachBottomDistance":50,
-  "usingComponents": {
-    "header":"../../components/header/header"
-  }
-}

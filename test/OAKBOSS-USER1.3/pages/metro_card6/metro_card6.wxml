@@ -1,9 +1,0 @@
-<view>
-  <header title="{{title}}" Url="{{Url}}"></header>
-  <view class='metro_card1_body'>
-    <view>
-         <image class='success1' src="../static/success1.png"></image>
-        <text class='tx'>挂失成功</text>
-    </view>
-  </view>
-</view>

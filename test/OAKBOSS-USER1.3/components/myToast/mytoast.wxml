@@ -1,6 +1,0 @@
-<view>
-  <view class='showModel'>
-    <image class='plaint' src='/pages/static/gantanhao.png'></image>
-    <text class='message'>{{message}}</text>
-  </view>
-</view>

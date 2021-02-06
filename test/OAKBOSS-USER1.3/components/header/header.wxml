@@ -1,8 +1,0 @@
-<view>
-  <view class="login">
-    <navigator class='nav' url="{{Url}}" open-type="redirect" >
-      <image class='back_left1' src='../../pages/static/fanhui.png'></image>
-    </navigator>
-    <text class='header_title'>{{title}}</text>
-  </view>
-</view>
